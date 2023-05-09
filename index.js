@@ -1,13 +1,12 @@
 import express from "express";
 import mongoose from "mongoose";
-import "dotenv/config";
 import cors from "cors";
 import itemRouter from "./src/routes/ItemRouter.js";
 import shopListRouter from "./src/routes/shopListRouter.js";
 const app = express();
-const port = process.env.PORT || 3001;
+const port = 5000;
 
-mongoose.connect(process.env.URI);
+mongoose.connect("mongodb+srv://rabees:OJ7sZREx2LM1dThG@cluster0.aikplsq.mongodb.net/");
 app.use(cors());
 app.use(express.json());
 
