@@ -130,6 +130,7 @@ export const getShopLists = async (req, res) => {
   }
 };
 
+
 export const getSingleShopList = async (req, res) => {
   try {
     const id = req.params.id;
