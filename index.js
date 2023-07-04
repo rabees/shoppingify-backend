@@ -6,7 +6,7 @@ import shopListRouter from "./src/routes/shopListRouter.js";
 const app = express();
 const port = 5000;
 
-mongoose.connect("mongodb+srv://rabees:OJ7sZREx2LM1dThG@cluster0.aikplsq.mongodb.net/");
+mongoose.connect(process.env.mongoURI);
 app.use(cors());
 app.use(express.json());
 
